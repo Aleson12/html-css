@@ -1,0 +1,173 @@
+@charset "UTF-8"; 
+body{  
+    margin: auto; /* deixa os elementos da página "esticados" até a margem da página */
+    background-color:rgb(170, 247, 215); /* cor de fundo do corpo da página */
+} 
+
+nav{
+    margin: auto;
+    text-align: left;
+    background-color: rgb(9, 78, 9);
+    padding: 6px; 
+    font-weight:bold; /* "peso" (ou espessura) da fonte */
+}  
+
+header{
+    background-image: linear-gradient(rgb(50, 192, 50),rgb(27, 82, 27)); /* efeito degradê */
+    text-align: center;
+    padding:20px;
+    padding-bottom: 1px;
+    padding-left: 0%;
+    padding-right: 0%;
+} 
+
+h1,h3{
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+} 
+
+h3{
+    padding-bottom: 20px;
+}
+
+nav > a{
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px;
+} 
+
+nav > a:hover{
+    background-color:darkgreen;
+    padding-top:7px;
+    padding-bottom:6px;
+} 
+
+#title1{
+    margin-top: 0px;
+    padding: 5px;
+    font-family: 'Fonte Android';
+    color:green;
+   font-size: larger;
+}  
+
+article{
+    background-color:white;
+    margin-right: 300px;
+    margin-left: 300px;
+    box-shadow: 1px 3px 5px #888888; 
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.subtitle1, .subtitle2{
+    background-image:linear-gradient(to right,rgb(170, 247, 215),white);
+    font-family:'Fonte Android';
+    color:green; 
+    font-size:large; /* foi necessário "forçar" uma formatação para que o conteúdo do elemento h2 ficasse menor que o conteúdo do elemento h1  */ 
+    padding-left: 6px;
+}  
+
+.item{
+    text-decoration:underline;
+} 
+
+p{
+    text-indent: 20px; /* primeira linha de cada parágrafo identada. */
+    text-align:justify;
+} 
+
+img{
+    width:100%;
+}
+
+#bugdroid_img{ /* centralizando uma imagem: */
+    display: block; /* box-model | modelo de caixa */
+    margin:auto; /* margens automáticas */
+    max-width:380px; /* o máximo de largura que a imagem irá ocupar será de 380px */
+}    
+
+#sec_video{ 
+    display: block;
+    margin:5px auto;
+    max-width:100%;
+}  
+
+@font-face { /* importando uma fonte baixada na web (que está no diretório local). */
+    font-family: 'Fonte Android'; /* nome escolhido pelo desenvolvedor */
+    src: url('idroid.otf') format('opentype'), url('idroid.ttf') /* caminho para a imagem e o seu respectivo formato. */
+    format('truetype'); 
+} 
+
+#list{
+    display: flex;
+} 
+
+#cont_extra1{
+    background-color: green;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#cont_extra2{
+    background-color: rgb(170, 247, 215);
+    margin-top: -19px; 
+    border-radius: 0px 0px 10px 10px;
+}  
+
+#cont_extra2 > p{ /* elemento "p" que é filho do id "#cont_extra2" */
+    padding: 15px;
+    padding-bottom: 0px;
+}  
+
+#cont_extra2 > ol{
+    padding-top: -10px;
+    padding-bottom: 10px;
+}
+
+#list > #ol2{
+    margin-left: 200px; /* lista à direita com 200px de espaçamento à esquerda */
+}   
+
+@media only screen and (max-width: 1145px){ /* quando a largura máxima da tela é de 1145px,  */
+    #list > #ol2{
+        margin:auto; /* as margens serão ajustadas automaticamente pelo navegador */
+    }    
+}    
+
+/*
+@media only screen and (max-width: 872px){  quando a largura máxima da tela é de 850px,  
+    #list > #ol2{
+        flex-wrap: wrap;
+    }     
+}    
+*/
+
+li::before{ /* pseudo-elemento */
+    content:'✓';
+}   
+
+footer{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(9, 78, 9);
+    padding-bottom:5px; 
+    color:white;
+}  
+
+footer > p{
+    padding-top: 15px;
+    text-align: center;
+} 
+
+.link_esp{
+    color:green;
+    padding:0px;
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+video {
+    width: 100%; /* a largura do vídeo irá ocupar 100% da tela */ 
+}  
+

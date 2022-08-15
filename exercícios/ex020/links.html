@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{ 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{ 
+            color:red;
+            text-decoration: none; /* retira toda e qualquer decoração do conteúdo do elemento. */
+            font-weight: bold; 
+        } 
+        a:visited{ /* Pseudo-classe que irá deixar a cor do conteúdo do elemento azul escuro após ter sido visitado. */
+            color:darkblue;
+        }
+        a:hover{ /* irá exibir uma sub-linha no conteúdo do elemento quando o cursor do mouse sobrepô-lo. */
+            text-decoration: underline;
+            color:black;
+        } 
+        a:active{
+            color: chocolate; /* quando o cursor do mouse clicar no conteúdo do elemento, ele ficará dessa cor e o link abrirá em outra aba. */
+        } 
+        a::before{ /* pseudo-classe que irá adicionar uma seta à direita do conteúdo do elemento (before = depois)*/
+            content:'-->'; /* (content = conteúdo) */
+        }
+        a::after{ /* pseudo-classe que irá adicionar uma seta à esquerda do conteúdo do elemento (after = antes) */
+            content:'<--'; /* (content = conteúdo) */
+        }   
+        .especial{
+            background-color: rgb(216, 191, 240);
+        }
+    </style> 
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io"> Repositório do GitHub </a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial"> Canal do YouTube </a></li>
+        <li><a href="https://www.cursoemvideo.com"> Site do Curso em Vídeo </a></li>
+    </ul>
+</body>
+</html> 

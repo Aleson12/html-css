@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade teste</title>
+    <style>
+        body{
+            background-color: gray;
+        } 
+        main{
+            background-color: white;
+            padding:20px;
+            border-radius: 10px;
+        
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }    
+
+        img{
+            width: 100%; /* adapta a imagem para qualquer medida de largura de tela */
+        } 
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tesde de Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, praesentium. Voluptates eligendi ab, quod officia magni delectus suscipit dicta eveniet, blanditiis numquam amet! Deleniti delectus ad nesciunt autem necessitatibus eaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore reprehenderit totam ad adipisci a deleniti, dolor minima fugiat neque accusamus aperiam nam! Sequi impedit quo commodi maxime, assumenda consequatur!Lorem</p>
+        <picture> <!-- para quando queremos definir uma imagem para uma determinada largura. -->
+            <source media="(max-width:600px)" srcset="projeto_zipado/imagens/irina-blok-pq.jpg"> <!-- quando a largura da tela for de 600px, ele irá renderizar outra imagem. -->
+            <img src="projeto_zipado/imagens/irina-blok.jpg" alt="Irina Blok"> <!-- imagem padrão. -->
+        </picture>  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt numquam ratione assumenda dolores odit harum vitae enim, sequi vel atque quae accusantium ipsam veniam voluptates labore delectus! Quae, perspiciatis voluptatum.</p>
+    </main>     
+</body> 
+</html>
