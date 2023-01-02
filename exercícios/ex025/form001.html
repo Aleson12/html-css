@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+    </style> 
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">     <!-- atributo "action" para referenciar o form a um script, neste caso, php  -->
+        <!-- método "post" para que os dados não apareçam na URL da página   -->        
+        <!-- atributo "autocomplete" com o valor "off" para que não haja indicação do que digitar no campo de entrada de dados  -->
+        <p><label for="inome">Nome:</label> <!-- tag "label" para referenciá-lo ao "input" por meio da declaração "for" cujo valor é o mesmo do id do input    -->
+            <input type="text" name="nome" id="inome" required minlength="5" maxlength="15" size="10" placeholder="Nome aqui" autocomplete="username"></p> <!-- tag para entrada de dados em texto cujo name e id são os mesmos -->
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" required minlength="5" size="10" placeholder="Sobrenome aqui" autocomplete="current-password"></p>
+        <p><input type="submit" value="Enviar"></p> <!-- tag para envio de dados, por meio do tipo "submit" -->
+    </form> 
+</body> 
+</html> 
